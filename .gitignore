@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.log
+*.html
+!frontend/index.html
+reporte_*.html
+*.csv
+
+# Los CSV del backend si se versionan (son la base de datos del proyecto)
+!backend/productos.csv
+!backend/ventas.csv
+
+# El histórico se genera con  python backend/generar_parquet.py  (pesa varios MB)
+*.parquet
+*.parquet.tmp
